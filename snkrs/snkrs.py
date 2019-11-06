@@ -79,7 +79,7 @@ def addtocart(username,password,producturl):
                     print("加入購物車失敗")
             except:
                 print("無法加入購物車,再試一次")
-                return clickadd
+                driver.refresh()
         except:
             print("尺寸無法點選 請更改")
             break
